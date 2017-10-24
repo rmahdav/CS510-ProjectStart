@@ -80,6 +80,13 @@ User says AutoBot that he wants to manage his VMs[S1]. The AutoBot shows all use
 ````
 ## Mocking Service Component
 
+We use "nock" to mock our api calls. In the following table you can see api calls that are mocked. The mock data files are located in /.
+| Action   | api  
+| ------------- | ------------ 
+| Create a new vm     | POST /v2/droplets         
+| Get IP of a vm      | GET /v2/droplets/:<dropletId>
+| Delete a vm         | DELETE /v2/droplets/:<dropletId>
+
 ##### Week 1
 
 | Deliverable   | Item/Status   |  Issues/Tasks
