@@ -85,8 +85,8 @@ We use "nock" to mock our api calls. In the following table you can see api call
 | Action   | api  
 | ------------- | ------------ 
 | Create a new vm     | POST /v2/droplets         
-| Get IP of a vm      | GET /v2/droplets/:<dropletId>
-| Delete a vm         | DELETE /v2/droplets/:<dropletId>
+| Get IP of a vm      | GET /v2/droplets/:dropletId
+| Delete a vm         | DELETE /v2/droplets/:dropletId
 
 ##### Week 1
 
