@@ -89,32 +89,19 @@ We use "nock" to mock our api calls. In the following table you can see api call
 | Delete a vm         | DELETE /v2/droplets/:dropletId
 | Upfate a vm         | POST /v2/droplets/:dropletId/actions
 
-##### Week 1
+## Bot Implementation
 
-| Deliverable   | Item/Status   |  Issues/Tasks
-| ------------- | ------------  |  ------------
-| Use Case Refinement      | Completed         |[TC1](https://trello.com/c/Y0Lggpq0)
-| Bot Integration      | Completed             |[TC2](https://trello.com/c/ioz5nZQC)
+* **Bot Platform**: We use Botkit to intercept and reply to messages between the User and the AutoBot that is a nodejs application. 
+* **Bot Integration**: We use API.AI to have natural language understanding in AutoBot. Using API.AI helps user to send intercepted messages and get an intent. These intents are mapped to actions in AutoBot. 
 
-##### Week 2
+## Selenium Testing
 
-| Deliverable   | Item/Status   |  Issues/Tasks
-| ------------- | ------------  |  ------------
-| Bot Platform - Use Case 1     | In Progress        |[TC3](https://trello.com/c/UdeMZwB2) [PT1](https://www.pivotaltracker.com/story/show/152219898)
-| Bot Platform - Use Case 2            |  In Progress        |[TC3](https://trello.com/c/UdeMZwB2) [PT2](https://www.pivotaltracker.com/story/show/152221185)
-| Mock Data - Use Case 1      | In Progress            |  [TC4](https://trello.com/c/wm2htHJN) [PT3](https://www.pivotaltracker.com/story/show/152219339)
+We use selenium to test that the AutoBot responds correctly based on the input. The selenium test is "here" and test results are "in this path". 
 
-##### Week 3
+## Task Tracking
 
-| Deliverable   | Item/Status   |  Issues/Tasks
-| ------------- | ------------  |  ------------
-| Bot Platform - Use Case 1     | Completed        |[TC3](https://trello.com/c/UdeMZwB2) [PT4](https://www.pivotaltracker.com/story/show/152219898)
-| Bot Platform - Use Case 2            |  In Progress        |[TC3](https://trello.com/c/UdeMZwB2) [PT5](https://www.pivotaltracker.com/story/show/152221185)
-| Bot Platform - Use Case 3            |  In Progress        |[TC3](https://trello.com/c/UdeMZwB2) 
-| Mock Data - Use Case 1      | Completed           |  [TC4](https://trello.com/c/wm2htHJN) [PT6](https://www.pivotaltracker.com/story/show/152219339)
-| Mock Data - Use Case 2      | In progress          |  [TC4](https://trello.com/c/wm2htHJN) 
-| Mock Data - Use Case 3      | Completed           |  [TC4](https://trello.com/c/wm2htHJN) 
-| Selenium testing - Use Case 1      | In Progress           |  [TC5](https://trello.com/c/hGyeTPnd)
-| Selenium testing - Use Case 2      | In Progress           |  [TC5](https://trello.com/c/hGyeTPnd)
-| Selenium testing - Use Case 3      | In Progress           |  [TC5](https://trello.com/c/hGyeTPnd)
-| Screencast      | In Progress       | [TC6](https://trello.com/c/BSYHFry7)
+We use Trello Cards and Pivotal Tasks to task tracking of this project. We define one Terello card for each task : Use case refinment, Mocking Service Components, Bot Integration, Bot Platform, Selenium Testing and Creating Screencast. In each Card you can see checklist items for each use case. We define Pivotal Task for each checklist item. For example Mocking Services Trello has 3 checklist for use case 1 to use case 3 and each checklist has a Pivotal Task. You can see our task tracking for week 1 to week 3 in [WORKSHEET.md] (path).
+
+## Screencast
+
+In [Screencast](path) we show AutoBot performs our use cases and our selenium tests are executed.
